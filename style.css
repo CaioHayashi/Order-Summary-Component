@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #E0E8FF;
+  background-image: url(images/pattern-background-desktop.svg)
+  ;
+  background-repeat: no-repeat;
+}
+
+main{
+  color: #7280A7;
+  max-width: 327px;
+  height: 568px;
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 20px 20px 0px rgba(121, 134, 173, 0.393);
+}
+
+main > img{
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+main > section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+section > h2 {
+  margin: 20px 0px 27px 0px;
+  font-size: 24px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+section > p {
+    padding: 0px 35px;
+    text-align: center;
+    color: #7280A7;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 14.4px;
+    margin: 24px;
+
+    background-color: #F5F7FF;
+    border-radius: 10px;
+    font-size: 16px;        
+}
+
+.button > img {
+  width: 50px;
+  margin-top: 1px;
+}
+
+.button > div {
+  margin-right: 16px;
+}
+
+.button > a{
+  color: blue;
+}
+.button > a:hover{
+  color: red;
+  text-decoration: none;
+}
+
+h4{
+  color: #1F2F56;
+}
+
+h5{
+  color: #7280A7;
+}
+.pay{
+  background-color:#3829E0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.3px;
+  color: #E0E8FF;
+
+  min-width: auto;
+  min-height: auto;
+
+  padding: 17px 77px;
+
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px 0px hsl(225deg 100% 94%);
+
+}
+
+.pay:hover{
+  cursor: pointer;
+  background-color: #9C94F0;
+}
+
+.button1 > a {
+  margin: 13px 0;
+  font-weight: 700;
+  color: #7280A7;
+  text-decoration: none;
+}
+.button1 > a:hover {
+  cursor: pointer;
+  color: #1F2F56;
+}
+
+.attribution{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.attribution > div > a:hover{
+  color: #7280a778;
+}
+
+@media (max-width: 720px){
+  main{
+    transform: scale(0.95);
+    width: 620px;
+    transition: all 1s;
+  }
+}
