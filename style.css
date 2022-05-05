@@ -39,7 +39,7 @@ main > section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 48px;
+  margin: 46px;
   
 }
 
@@ -62,7 +62,7 @@ section > p {
 .button{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 21px;
@@ -71,13 +71,14 @@ section > p {
     font-size: 16px;        
 }
 
-.button > img {
-  width: 50px;
-  margin-top: 1px;
+.button > div {
+  display: flex;
+  align-items: center;
 }
 
-.button > div {
-  margin-right: 16px;
+.button > div > img {
+  width: 50px;
+  margin-right: 10px;
 }
 
 .button > a{
