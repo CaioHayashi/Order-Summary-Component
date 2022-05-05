@@ -9,8 +9,7 @@
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  height: 100vh;
-
+  height: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,11 +21,12 @@ body {
 }
 
 main{
+  position: relative;
   color: #7280A7;
-  max-width: 327px;
-  height: 568px;
-  margin-top: 40px;
+  width: 449px;
+  height: 697px;
   border-radius: 20px;
+  margin: 5px;
   background-color: white;
   box-shadow: 0px 20px 20px 0px rgba(121, 134, 173, 0.393);
 }
@@ -40,18 +40,18 @@ main > section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 48px;
   
 }
 
 section > h2 {
-  margin: 20px 0px 27px 0px;
   font-size: 24px;
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
 
 section > p {
-    padding: 0px 35px;
+    padding: 21px;
     text-align: center;
     color: #7280A7;
 }
@@ -60,10 +60,9 @@ section > p {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-    padding: 14.4px;
-    margin: 24px;
-
+    align-items: center;
+    width: 100%;
+    padding: 21px;
     background-color: #F5F7FF;
     border-radius: 10px;
     font-size: 16px;        
@@ -95,20 +94,18 @@ h5{
 }
 .pay{
   background-color:#3829E0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13.3px;
   color: #E0E8FF;
-
-  min-width: auto;
-  min-height: auto;
-
-  padding: 17px 77px;
+  margin: 31px 0px;
+  width: 100%;
+  padding: 16px;
 
   border: none;
   border-radius: 10px;
   box-shadow: 0px 20px 20px 0px hsl(225deg 100% 94%);
-
 }
 
 .pay:hover{
@@ -116,8 +113,14 @@ h5{
   background-color: #9C94F0;
 }
 
+.button1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 .button1 > a {
-  margin: 13px 0;
   font-weight: 700;
   color: #7280A7;
   text-decoration: none;
@@ -128,6 +131,8 @@ h5{
 }
 
 .attribution{
+  position: absolute;
+  top: 100%;
   margin-top: 5px;
   display: flex;
   flex-direction: row;
@@ -138,10 +143,3 @@ h5{
   color: #7280a778;
 }
 
-@media (max-width: 720px){
-  main{
-    transform: scale(0.95);
-    width: 620px;
-    transition: all 1s;
-  }
-}
